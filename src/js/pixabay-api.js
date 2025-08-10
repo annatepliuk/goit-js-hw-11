@@ -13,5 +13,7 @@ const params = {
     orientation: 'horizontal',
     safesearch: true,
   }; 
-   return axios.get(BASE_URL, {params}).then(res => res.data);
+   return axios
+   .get(BASE_URL, {params})
+   .then(res => res.data);
 }
